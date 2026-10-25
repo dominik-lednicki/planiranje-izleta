@@ -6,15 +6,17 @@ let budgetPrompt = prompt("Unesite svoje budžet");
 
 //izračun
 let ukupanTrosak = cijenaJedneUlaznicePrompt * brojUlaznicaPrompt;
-let preostaoIznos = ukupanTrosak - budgetPrompt;
+let preostaoIznos = budgetPrompt - ukupanTrosak;
 let dovoljnoNovca;
 let tocanIznos;
 
 // usporedbe
 if (ukupanTrosak < budgetPrompt) dovoljnoNovca = true;
 else if (ukupanTrosak > budgetPrompt) dovoljnoNovca = false;
-if (budgetPrompt == ukupanTrosak) tocanIznos = true;
-else if (budgetPrompt != ukupanTrosak) tocanIznos = false;
+if (budgetPrompt == ukupanTrosak) {
+    tocanIznos = true;
+    dovoljnoNovca = true;
+} else if (budgetPrompt != ukupanTrosak) tocanIznos = false;
 
 let nastavakPlaniranja = confirm("Zelite l inastaviti plainrati?");
 
@@ -23,9 +25,9 @@ alert(
         imePrompt +
         "\nUkupan trošak: " +
         ukupanTrosak +
-        "\nPreostali iznos: " +
+        " EUR\nPreostali iznos: " +
         preostaoIznos +
-        "\nDovoljno novca: " +
+        " EUR\nDovoljno novca: " +
         dovoljnoNovca +
         "\nTocan iznos: " +
         tocanIznos +
