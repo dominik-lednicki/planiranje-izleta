@@ -2,7 +2,7 @@
 let imePrompt = prompt("Unesite svoje ime");
 let cijenaJedneUlaznicePrompt = prompt("Unesite cijenu jedne ulaznice");
 let brojUlaznicaPrompt = prompt("Unesite koliko ulaznica želite kupiti");
-let budgetPrompt = prompt("Unesite svoje budžet");
+let budgetPrompt = Number(prompt("Unesite svoje budžet"));
 
 //izračun
 let ukupanTrosak = cijenaJedneUlaznicePrompt * brojUlaznicaPrompt;
@@ -13,7 +13,7 @@ let tocanIznos;
 // usporedbe
 if (ukupanTrosak < budgetPrompt) dovoljnoNovca = true;
 else if (ukupanTrosak > budgetPrompt) dovoljnoNovca = false;
-if (budgetPrompt == ukupanTrosak) {
+if (budgetPrompt === ukupanTrosak) {
     tocanIznos = true;
     dovoljnoNovca = true;
 } else if (budgetPrompt != ukupanTrosak) tocanIznos = false;
