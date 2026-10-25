@@ -34,3 +34,5 @@ alert(
         "\nNastavak planiranja: " +
         nastavakPlaniranja,
 );
+
+//Koristim dark mod btw
