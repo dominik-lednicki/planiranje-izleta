@@ -10,7 +10,25 @@ let preostaoIznos = ukupanTrosak - budgetPrompt;
 let dovoljnoNovca;
 let tocanIznos;
 
+// usporedbe
 if (ukupanTrosak < budgetPrompt) dovoljnoNovca = true;
 else if (ukupanTrosak > budgetPrompt) dovoljnoNovca = false;
 if (budgetPrompt == ukupanTrosak) tocanIznos = true;
 else if (budgetPrompt != ukupanTrosak) tocanIznos = false;
+
+let nastavakPlaniranja = confirm("Zelite l inastaviti plainrati?");
+
+alert(
+    "Ime: " +
+        imePrompt +
+        "\nUkupan trošak: " +
+        ukupanTrosak +
+        "\nPreostali iznos: " +
+        preostaoIznos +
+        "\nDovoljno novca: " +
+        dovoljnoNovca +
+        "\nTocan iznos: " +
+        tocanIznos +
+        "\nNastavak planiranja: " +
+        nastavakPlaniranja,
+);
