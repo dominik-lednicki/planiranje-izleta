@@ -13,4 +13,4 @@ let tocanIznos;
 if (ukupanTrosak < budgetPrompt) dovoljnoNovca = true;
 else if (ukupanTrosak > budgetPrompt) dovoljnoNovca = false;
 if (budgetPrompt == ukupanTrosak) tocanIznos = true;
-else tocanIznos = false;
+else if (budgetPrompt != ukupanTrosak) tocanIznos = false;
