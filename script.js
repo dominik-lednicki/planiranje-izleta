@@ -16,7 +16,7 @@ else if (ukupanTrosak > budgetPrompt) dovoljnoNovca = false;
 if (budgetPrompt === ukupanTrosak) {
     tocanIznos = true;
     dovoljnoNovca = true;
-} else if (budgetPrompt != ukupanTrosak) tocanIznos = false;
+} else if (budgetPrompt !== ukupanTrosak) tocanIznos = false;
 
 let nastavakPlaniranja = confirm("Zelite l inastaviti plainrati?");
 
@@ -35,4 +35,4 @@ alert(
         nastavakPlaniranja,
 );
 
-//Koristim dark mod btw
+//Bijela slova se vide u dark modu
