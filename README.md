@@ -1,6 +1,6 @@
 # Planiranje Izleta (Trip Planner)
 
-A simple web application built for a school project to help organize trips and manage excursion details.
+A simple web application built for a school homework.
 
 ## Tech Stack
 * HTML5
